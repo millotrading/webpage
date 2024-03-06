@@ -280,10 +280,6 @@ svg {
     margin-top: 0;
 }
 
-.farewell .media--video {
-    margin-top: 0;
-}
-
 .media-container {
     padding: .35rem;
     box-shadow: 2px 2px 20px #44484b73;
@@ -316,6 +312,10 @@ svg {
     margin-right: 4em;
     margin-top: 5em;
     margin-bottom: 1em;
+    width: 100%;
+    width: -moz-available;         
+    width: -webkit-fill-available; 
+    width: fill-available;
 }
 
 .cta-container {
@@ -405,9 +405,71 @@ footer .logo {
 }
 
 @media (max-width: 1135px) {
+
+    .title, #name {
+        font-size: 3rem;
+    }
+
+    .front-page {
+        height: calc(100vh - 60px);
+        flex-direction: column;
+    }
+
+    .front-page__info {
+        padding: 2em 0 0 0;
+    }
+
+    #portrait {
+        margin: 0;
+    }
+
+    .section, footer {
+        padding: 5rem 2.5rem;
+    }
+
+    /* .student-results-grid {
+        margin-right: 0;
+        margin-left: 0;
+    } */
+
+    .media--big {
+        margin: 2.5em 0 0;
+    }
+}
+
+@media (min-width: 850px) {
+    .titled-image-container .secondary-media-container {
+        min-width: 25em;
+    }
+}
+
+@media (max-width: 850px) {
+    .titled-image-container .section__paragraph {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 700px) {
+    .navigation__btn {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
     .titled-image-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .titled-image-container .secondary-media-container {
+        max-width: 20em;
+    }
+
+    @media (max-width: 850px) {
+        .titled-image-container .section__paragraph {
+            max-width: 100%;
+        }
     }
 
     .trades .titled-image-container {
@@ -425,41 +487,6 @@ footer .logo {
 
     .titled-image-container .section__paragraph {
         margin-top: 0;
-    }
-
-    .student-results-grid {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .media--big {
-        margin: 2.5em 0 0;
-    }
-}
-
-@media (min-width: 700px) {
-    .navigation__btn {
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .title, #name {
-        font-size: 3rem;
-    }
-
-    .front-page {
-        height: calc(100vh - 60px);
-        flex-direction: column;
-    }
-
-    .front-page__info {
-        padding: 2em 0 0 0;
-    }
-
-    #portrait {
-        margin: 0;
     }
 
     .student-results-grid {
@@ -481,10 +508,6 @@ footer .logo {
 
     .navigation__btn {
         display: block;
-    }
-
-    .section, footer {
-        padding: 5rem 2.5rem;
     }
 
     .primary-media-container {
@@ -511,9 +534,9 @@ footer .logo {
         margin-top: 0;
     }
 
-    .farewell-section__container .media--big {
+    /* .farewell-section__container .media--big {
         margin-top: 0;
-    }
+    } */
 
     .cta-container {
         grid-template-columns: 1fr;
