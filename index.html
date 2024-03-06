@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MILLOTRADING</title>
+    <link rel="icon" type="image/x-icon" href="MILLOTRADING-logo.png">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__btn-container">
+            <button class="modal__btn">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+            </button>
+        </div>
+        <ul class="modal__links-container">
+            <li class="link modal__link">
+                <a class="modal__link" href="#mi-historia">
+                    MI HISTORIA
+                </a>
+            </li>
+            <li class="link modal__link">
+                <a href="#trades-e-inversiones">
+                    TRADES E INVERSIONES
+                </a>
+            </li>
+            <li class="link modal__link">
+                <a href="#estudiantes">
+                    ESTUDIANTES
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="background-decoration"></div>
     <div class="background-decoration"></div>
     <div class="background-decoration"></div>
@@ -15,7 +40,6 @@
         <a href="#millotrading" class="logo">
             <img src="MILLOTRADING-logo.png" alt="">
         </a>
-        
         <ul class="navigation__links-container">
             <li class="link">
                 <a href="#mi-historia">
@@ -33,6 +57,9 @@
                 </a>
             </li>
         </ul>
+        <button class="navigation__btn">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+        </button>
     </nav>
     <section class="section front-page" id="millotrading">
         <div class="primary-media-container media-container media--picture" id="portrait">
@@ -204,14 +231,16 @@
             <li>MARIO CICCARELLI</li>
             <li>MILLOTRADING</li>
         </ul>
+        <img src="MILLOTRADING-logo-footer.png" alt="" class="logo">
         <ul class="footer__links">
-            <li>
-                <a href="">AGENDA UNA CITA</a>
-            </li>
             <li>
                 <a href="">UNETE A LA COMUNIDAD</a>
             </li>
+            <li>
+                <a href="">AGENDA UNA CITA</a>
+            </li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
